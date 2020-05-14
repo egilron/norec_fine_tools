@@ -1,6 +1,5 @@
-## norec_fine_tools
-A place to share tools that I have found useful when working with the Norwegian review corpus for fine-grained sentiment analysis. It also is an opportunity to learn about publishing on github.
-
+**A place to share tools that I have found useful when working with the Norwegian review corpus for fine-grained sentiment analysis.**  
+[Norec Fine on github](https://github.com/ltgoslo/norec_fine)
 ### Reference the metadata for documents
 The NoReC Norwegian Review Corpus is found [here.](https://github.com/ltgoslo/norec) When you follow the instructions and download tha data, you get the metadata for the text files. The entire NoReC is larger than norec-fine, but norec_fine has kept the 6-digit document id in their textfile names. NoReC can be used for document-level sentiment analysis, since it has a 1-6 rating for all documents. It also has the category for the review and language (Bokmål nb or nynorsk).
 
@@ -27,4 +26,4 @@ The NoReC Norwegian Review Corpus is found [here.](https://github.com/ltgoslo/no
     "year": 2010
   },
 ```
-When working with the norec_fine, I am interested in the category of the text, and I use the metadata.json from NoReC for that. The file, as retrieved May 2020 is in the repo here.
+When working with the norec_fine, I am interested in the category of the text, and I use the metadata.json from NoReC for that. The file, as retrieved May 2020 is in the repo [here](https://github.com/egilron/norec_fine_tools/.
