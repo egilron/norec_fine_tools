@@ -1,1 +1,9 @@
 .vscode/settings.json
+# Added by vscode
+platform.code-workspace
+
+# By default ignore all subfolders
+**/
+# Except summaries
+!data/
+!docs/
