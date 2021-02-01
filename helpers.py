@@ -1,4 +1,5 @@
 import random
+import os
 # from simpletransformers.ner import NERModel
 def tagsset(textfile, separator = "\t"):
     '''
@@ -122,4 +123,45 @@ def no_en_conll(dfx):
     return ( "\n\n".join(no_lines), "\n\n".join(en_lines))
 
 
+def dataset_w_tags(train: str, dev: str):
+    '''
+    Input: paths to train and dev/test
+    Extraxts the tags from train, checks that the dev file
+    has the same tags. Returns the train, dev, tags tuple
+    '''
+    with open(train) as rf:
+        tags = tagsset(rf.read(), separator = " ")
+        assert len(tags) > 1, "Train tags not detected"
 
+    with open(dev) as rf:
+        dev_tags = tagsset(rf.read(), separator = " ")
+        assert len(dev_tags) > 1, "Dev tags not detected"
+        assert dev_tags <= tags, " Train and dev have different tagsets"
+
+    return (train, dev, list(tags))
+
+def epoch_results(parent: str):
+    '''
+    Input: path to parent folder that contains 
+    folders for each epoch evaluation with simpletransformers
+    returns a dataframe with all experiments
+
+    '''
+    results = {}
+    for p in os.walk(parent):
+        if "-epoch-" in p[0] and 'eval_results.txt' in p[2]:
+            with open(os.path.join(p[0], 'eval_results.txt' )) as rf:
+                result = {}
+                for line in rf.read().strip().split("\n"):
+                    key, value = line.strip().split(" = ")
+                    result[key.strip()] = float(value.strip())
+
+                results[int(p[0].split("epoch-")[1])] = result
+
+    return results
+
+if __name__ == "__main__":
+    ps = epoch_results("/media/egil/Data/prosjekter/WNNLP-2019/outputs/bert-base-multilingual-cased_1558")
+    for i in range(1, len(ps)+1):
+        print(i)
+        print(ps[i])
