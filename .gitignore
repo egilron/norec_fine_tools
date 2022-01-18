@@ -1,5 +1,5 @@
 .vscode/settings.json
-.gitignore
+# .gitignore
 # Added by vscode
 platform.code-workspace
 
@@ -8,3 +8,4 @@ platform.code-workspace
 # Except these
 !data/
 !data/norne2/
+!summaries
