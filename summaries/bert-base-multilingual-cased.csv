@@ -1,0 +1,2 @@
+,eval_loss,precision,recall,f1_score,train,dev_test,training_epochs,transformer_model
+0,0.37798517939791054,0.3865638766519824,0.40022805017103763,0.39327731092436974,data/spaceseparated/norec_fine/norec_fine_train.conll,data/spaceseparated/norec_fine/norec_fine_dev.conll,8,bert-base-multilingual-cased
