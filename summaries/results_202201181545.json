@@ -1,1 +1,0 @@
-[{"eval_loss": 0.20655432483181357, "precision": 0.0, "recall": 0.0, "f1_score": 0.0, "train": "data/spaceseparated/norec_fine_64.conll", "dev_test": "data/spaceseparated/norec_fine_64.conll", "training_epochs": 1, "transformer_model": "bert-base-multilingual-cased"}]

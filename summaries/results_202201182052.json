@@ -1,1 +1,0 @@
-[{"eval_loss": 0.1761039666492555, "precision": 0.500561167227834, "recall": 0.508551881413911, "f1_score": 0.504524886877828, "train": "data/spaceseparated/norec_fine/norec_fine_train.conll", "dev_test": "data/spaceseparated/norec_fine/norec_fine_dev.conll", "training_epochs": 3, "transformer_model": "NbAiLab/nb-bert-base"}]

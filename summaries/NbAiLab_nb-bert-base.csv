@@ -1,2 +1,0 @@
-,eval_loss,precision,recall,f1_score,train,dev_test,training_epochs,transformer_model
-0,0.1761039666492555,0.500561167227834,0.508551881413911,0.504524886877828,data/spaceseparated/norec_fine/norec_fine_train.conll,data/spaceseparated/norec_fine/norec_fine_dev.conll,3,NbAiLab/nb-bert-base

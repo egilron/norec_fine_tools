@@ -1,1 +1,0 @@
-[{"eval_loss": NaN, "precision": 0.0, "recall": 0.0, "f1_score": 0.0, "train": "data/spaceseparated/norec_fine/norec_fine_train.conll", "dev_test": "data/spaceseparated/norec_fine/norec_fine_dev.conll", "training_epochs": 8, "transformer_model": "ltgoslo/norbert"}]

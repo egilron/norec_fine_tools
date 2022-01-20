@@ -3,9 +3,9 @@
 # Added by vscode
 platform.code-workspace
 
-# By default ignore all subfolders
-**/
-# Except these
-!data/
-!data/norne2/
-!summaries
+# Ignore these subfolders
+outputs/
+runs/
+cache_dir/
+__pycache__
+
