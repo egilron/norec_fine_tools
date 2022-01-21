@@ -12,7 +12,7 @@ Since [the issue](https://github.com/ltgoslo/NorBERT/issues/1) reported differen
 ### Results
 **For the CPU experiment**, the output reported a running loss. NorBERT was the only model that evaluated to zero precision and recall, but a friend reran the experiment with more epochs and then NorBERT performed as expected. So NorBERT works fine in this setting.
 
-For the GPU experiment, the loss was reported as NaN, using NorBERT.
+**For the GPU experiment**, the loss was reported as NaN, using NorBERT.
 
 See the two notebooks for more details.
 
