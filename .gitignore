@@ -9,3 +9,4 @@ runs/
 cache_dir/
 __pycache__
 
+*.out
